@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- External font from Google Fonts "Alatsi" -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,58 +11,63 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Title of the page -->
     <title>AIgram</title>
   </head>
-  <body>
+  <body class="light-mode">
+    <!-- Sidebar section -->
     <aside>
+      <!-- Title in side (Logo) -->
       <h1 class="logo">AIgram</h1>
       <nav>
+        <!-- List (unordered) of icons and corresponding texts in the sidebar -->
         <ul class="nav-list">
           <div class="f-items">
+            <!-- Instagram icon for Tablet view -->
             <li class="instaIcon">
-              <a href="#"
-                ><i><img src="icons/instagram.svg" alt="" /></i
-              ></a>
+              <a href="#"><img src="icons/instagram.svg" alt="" /></a>
             </li>
             <li>
               <a href="#"
-                ><i><img src="icons/home.svg" alt="" /></i> <span>Home</span>
+                ><img src="icons/home.svg" alt="" /> <span>Home</span>
               </a>
             </li>
-            <li>
+            <li class="searchIcon">
               <a href="#"
-                ><i><img src="icons/search.svg" alt="" /></i>
+                ><img src="icons/search.svg" alt="" />
                 <span>Search</span>
               </a>
             </li>
             <li>
-              <a href="#">
-                <i><img src="icons/reels.svg" alt="" /></i> <span>Reels</span>
+              <a href="#"
+                ><img src="icons/explore.svg" alt="" />
+                <span>Explore</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i><img src="icons/messages.svg" alt="" /></i>
+                <img src="icons/reels.svg" alt="" /><span>Reels</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="icons/messages.svg" alt="" />
                 <span>Message</span>
               </a>
             </li>
-            <li class="notificatio">
+            <li class="heartIcon">
               <a href="#">
-                <i
-                  ><img
-                    class="notificatio"
-                    src="icons/notifications.svg"
-                    alt=""
-                /></i>
+                <img src="icons/notifications.svg" alt="" />
                 <span>Notification</span>
               </a>
             </li>
             <li>
               <a href="#"
-                ><i><img src="icons/create.svg" alt="" /></i>
+                ><img src="icons/create.svg" alt="" />
                 <span>Create</span>
               </a>
             </li>
+            <!-- Mini profile image and text -->
             <li>
               <a href="#"
                 ><img class="pimg" src="images/Profile.png" alt="" />
@@ -69,17 +75,17 @@
               </a>
             </li>
           </div>
-
-          <div class="and-items">
+          <!-- Bottom of sidebar icons -->
+          <div class="bottomIcons">
             <li>
               <a href="#" class="and-items"
-                ><i><img src="icons/threads.svg" alt="" /></i>
+                ><img src="icons/threads.svg" alt="" />
                 <span>Threads</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i><img src="icons/more.svg" alt="" /></i> <span>More</span>
+                <img src="icons/more.svg" alt="" /><span>More</span>
               </a>
             </li>
           </div>
@@ -87,66 +93,84 @@
       </nav>
     </aside>
 
+    <!-- Main section -->
     <main>
+      <!-- Header -->
       <header>
+        <!-- Mobile header -->
         <ul class="mobile-header">
           <li><img class="Settings" src="icons/gear.svg" alt="" /></li>
-          <li>I'm Singularity 1.0</li>
+          <li>
+            <select class="selectHeader">
+              <option value=" I'm reda chaanoun">I'm Singularity 1.0</option>
+            </select>
+          </li>
           <li>
             <i><img src="icons/uer-plus.svg" alt="" /></i>
           </li>
         </ul>
-
-        <div class="containerall">
-          <div class="to-add-description-mobile">
+        <!-- Desktop & Tablet header -->
+        <ul class="containerall">
+          <li class="AddedHeader">
             <div class="informationall">
               <img class="imgprofile" src="images/Profile.png" alt="" />
+
+              <!-- Bio frame -->
               <div class="container-info">
                 <ul class="infoedit">
                   <li class="name">I'm Singularity 1.0</li>
+                  <!-- Buttons for editing profile and viewing archive -->
                   <li class="edit"><a href="#">Edit Profile</a></li>
                   <li class="edit"><a href="">View Archive</a></li>
-                  <i><img class="Settings" src="icons/gear.svg" alt="" /></i>
+                  <!-- Settings icon -->
+                  <li><img class="Settings" src="icons/gear.svg" alt="" /></li>
                 </ul>
+                <!-- Stats -->
                 <ul class="information">
                   <li><p>6 Post</p></li>
                   <li><p>1 Followers</p></li>
                   <li><p>39 Following</p></li>
                 </ul>
-                <span class="description">😆</span>
+                <!-- emoji -->
+                <span class="emoji2">😆</span>
               </div>
             </div>
-            <span class="description-mobile">😆</span>
-          </div>
-          <div class="container-new">
+            <span class="emoji">😆</span>
+          </li>
+          <!-- New Reel icon -->
+          <li class="container-new">
             <div class="new">
               <i><img src="icons/new.svg" alt="" /></i>
             </div>
             <p class="newp">New</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </header>
-
-      <section class="callery">
+      <!-- middle section -->
+      <section>
+        <!-- Navigation tabs -->
         <div class="container-posts">
+          <!-- Stats for Mobile view -->
           <ul class="information-mobile">
             <li><span>6</span> Post</li>
             <li><span>1</span> Followers</li>
             <li><span>39 </span> Following</li>
           </ul>
+          <!-- Tabs -->
           <ul class="Po-Sa-Ta">
-            <li class="post">
-              <i><img src="icons/gridActive.svg" alt="" /></i>
-              <span>POSTS</span>
+            <li class="selected">
+              <img src="icons/gridActive.svg" alt="" /><span>POSTS</span>
             </li>
             <li class="click">
-              <i><img src="icons/saved.svg" alt="" /></i> <span>SAVED</span>
+              <img src="icons/saved.svg" alt="" /><span>SAVED</span>
             </li>
             <li class="click">
-              <i><img src="icons/tagged.svg" alt="" /></i> <span>TAGGED</span>
+              <img src="icons/tagged.svg" alt="" /><span>TAGGED</span>
             </li>
           </ul>
-          <div class="posts">
+          <!-- Gallery grid for images -->
+          <div class="gallery">
+            <!-- Image frames with images -->
             <img id="pho1" src="images/image1.png" alt="" />
             <img id="pho2" src="images/image2.png" alt="" />
             <img id="pho3" src="images/image3.png" alt="" />
@@ -156,8 +180,9 @@
           </div>
         </div>
       </section>
-
+      <!-- Footer -->
       <footer>
+        <!-- Footer links -->
         <ul class="footerlinks">
           <li><a href="#">Meta</a></li>
           <li><a href="#">About</a></li>
@@ -173,15 +198,18 @@
           <li><a href="#">Contact Uploading & Non-Users</a></li>
           <li><a href="#">Meta Verified</a></li>
         </ul>
+        <!-- Language selector and copyright -->
         <ul class="Language">
           <li>
             <select>
               <option value="english">English</option>
             </select>
           </li>
+          <!-- Copyright information -->
           <li><p>© 2024 Instagram from Meta</p></li>
         </ul>
       </footer>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
